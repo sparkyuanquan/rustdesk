@@ -983,10 +983,10 @@ pub fn get_api_server(api: String, custom: String) -> String {
         res.pop();
     }
     if res.starts_with("https")
-        && res.ends_with(":50004")
+        && res.ends_with(":21114")
         && get_builtin_option(keys::OPTION_ALLOW_HTTPS_21114) != "Y"
     {
-        return res.replace(":50004", "");
+        return res.replace(":21114", "");
     }
     res
 }
@@ -1014,7 +1014,7 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://rd.800688.xyz".to_owned()
+    "https://rd.800688.xyz:50004".to_owned()
 }
 
 #[inline]
