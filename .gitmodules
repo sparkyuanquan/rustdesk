@@ -1,0 +1,6 @@
+[submodule "libs/hbb_common"]
+	path = libs/hbb_common
+	url = https://github.com/sparkyuanquan/hbb_common
+[submodule "hbb_common"]
+	path = libs/hbb_common
+	url = https://github.com/sparkyuanquan/hbb_common
